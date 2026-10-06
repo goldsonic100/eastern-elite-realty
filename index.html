@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eastern Elite Realty, LLC | Maggie Wong Brokerage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <style>
+    .bg-navy { background-color: #0b1f3a; }
+    .text-navy { color: #0b1f3a; }
+    .bg-navy-light { background-color: #16325c; }
+    .border-navy { border-color: #0b1f3a; }
+    .bg-gold { background-color: #c5a059; }
+    .text-gold { color: #c5a059; }
+    .speech-bubble {
+      position: relative;
+      background: #f8fafc;
+      border-radius: .8em;
+      border: 1px solid #e2e8f0;
+    }
+    .speech-bubble:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-top-color: #f8fafc;
+      border-bottom: 0;
+      border-left: 0;
+      margin-bottom: -15px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <div class="bg-navy text-white text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-6">
+        <span><i class="fas fa-map-marker-alt text-gold mr-2"></i>375 VFW Parkway, Chestnut Hill, MA 02467</span>
+        <span><i class="fas fa-phone-alt text-gold mr-2"></i><a href="tel:6173192803" class="hover:underline">(617) 319-2803</a></span>
+        <span><i class="fas fa-envelope text-gold mr-2"></i><a href="mailto:mwong419@gmail.com" class="hover:underline">mwong419@gmail.com</a></span>
+      </div>
+      <div class="text-gray-300">
+        <span>Eastern Elite Realty, LLC &bull; Established 2016</span>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20">
+        <div class="flex items-center">
+          <a href="#" class="flex items-center space-x-3">
+            <div class="bg-navy text-white p-2.5 rounded font-serif font-bold text-xl tracking-wider border-b-2 border-gold">
+              EER
+            </div>
+            <div>
+              <span class="block text-xl font-bold font-serif text-navy tracking-tight">EASTERN ELITE REALTY</span>
+              <span class="block text-xs text-gray-500 uppercase tracking-widest">Maggie Wong &bull; Principal Broker</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-6 font-medium text-sm">
+          <a href="#home" class="text-navy hover:text-gold transition">Home</a>
+          <a href="#listings" class="text-navy hover:text-gold transition">MLS Listings</a>
+          <a href="#buyers" class="text-navy hover:text-gold transition">Buyer's Guide</a>
+          <a href="#sellers" class="text-navy hover:text-gold transition">Seller's Guide</a>
+          <a href="#about" class="text-navy hover:text-gold transition">About Us</a>
+          <a href="#testimonials" class="text-navy hover:text-gold transition">Testimonials</a>
+          <a href="#contact" class="bg-navy text-white px-5 py-2.5 rounded hover:bg-navy-light transition shadow-sm">Contact Maggie</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="relative bg-navy text-white py-24 px-4">
+    <div class="max-w-5xl mx-auto text-center space-y-6">
+      <span class="inline-block bg-navy-light border border-gold/40 text-gold px-4 py-1.5 rounded-full text-xs uppercase tracking-widest font-semibold">Client-Focused Dedication Since 2016</span>
+      <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight">Eastern Elite Realty</h1>
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-light">
+        We focus on putting our clients first and are dedicated to providing the utmost support. Guiding clients through every step of the buying and selling process in Natick, Newton, Concord, Quincy, Chestnut Hill, and Greater Boston.
+      </p>
+      <div class="pt-4 flex flex-wrap justify-center gap-4">
+        <a href="#listings" class="bg-gold text-navy font-bold px-8 py-3.5 rounded hover:bg-yellow-500 transition shadow-lg">View MLS Properties</a>
+        <a href="#sellers" class="bg-transparent border border-white text-white font-bold px-8 py-3.5 rounded hover:bg-white hover:text-navy transition">Free Home Evaluation</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="listings" class="py-20 px-4 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
+        <div>
+          <span class="text-gold font-bold uppercase tracking-widest text-xs">MLS PIN Synchronized</span>
+          <h2 class="text-3xl font-serif font-bold text-navy mt-1">Featured Listings & Recent Sales</h2>
+          <p class="text-gray-600 text-sm mt-1">Real-time properties represented by Maggie Wong & Eastern Elite Realty, LLC.</p>
+        </div>
+        
+        <div class="bg-white p-2 rounded shadow-sm border border-gray-200 text-xs flex gap-2">
+          <span class="inline-flex items-center text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded font-semibold"><i class="fas fa-circle text-[8px] mr-1.5 text-emerald-500"></i> Active MLS</span>
+          <span class="inline-flex items-center text-blue-700 bg-blue-50 px-2.5 py-1 rounded font-semibold"><i class="fas fa-check-circle text-[10px] mr-1.5 text-blue-500"></i> Represented / Sold</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="1001 Marina Dr #705" class="w-full h-56 object-cover">
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded shadow">Active MLS #73570917</span>
+            <span class="absolute bottom-3 right-3 bg-navy text-white text-lg font-bold px-3 py-1 rounded">$829,000</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-navy">1001 Marina Dr Unit 705</h3>
+              <p class="text-gray-500 text-sm mb-4">Quincy, MA 02171 &bull; Marina Bay Waterfront</p>
+              <div class="flex justify-between border-y border-gray-100 py-3 text-sm text-gray-600 mb-4">
+                <span><i class="fas fa-bed text-gold mr-1"></i> 2 Beds</span>
+                <span><i class="fas fa-bath text-gold mr-1"></i> 2 Baths</span>
+                <span><i class="fas fa-ruler-combined text-gold mr-1"></i> 1,452 Sq Ft</span>
+              </div>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Luxury waterfront living in Marina Point featuring private balcony, floor-to-ceiling glass, concierge services, and garage parking.</p>
+            </div>
+            <a href="#contact" class="block text-center bg-navy text-white text-sm font-semibold py-2.5 rounded hover:bg-navy-light transition">Inquire With Maggie</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="7 Whaler Ln Unit 7" class="w-full h-56 object-cover">
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded shadow">Active MLS #73575658</span>
+            <span class="absolute bottom-3 right-3 bg-navy text-white text-lg font-bold px-3 py-1 rounded">$1,399,000</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-navy">7 Whaler Ln Unit 7</h3>
+              <p class="text-gray-500 text-sm mb-4">Quincy, MA 02171 &bull; Premier Townhome</p>
+              <div class="flex justify-between border-y border-gray-100 py-3 text-sm text-gray-600 mb-4">
+                <span><i class="fas fa-bed text-gold mr-1"></i> 3 Beds</span>
+                <span><i class="fas fa-bath text-gold mr-1"></i> 2.5 Baths</span>
+                <span><i class="fas fa-ruler-combined text-gold mr-1"></i> 2,424 Sq Ft</span>
+              </div>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Spacious multi-level waterfront layout with panoramic harbor skyline views, gourmet kitchen, and primary ocean suite.</p>
+            </div>
+            <a href="#contact" class="block text-center bg-navy text-white text-sm font-semibold py-2.5 rounded hover:bg-navy-light transition">Inquire With Maggie</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="149 Upland Ave" class="w-full h-56 object-cover">
+            <span class="absolute top-3 left-3 bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded shadow">Represented / Sold</span>
+            <span class="absolute bottom-3 right-3 bg-gray-800 text-white text-lg font-bold px-3 py-1 rounded">Closed</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-navy">149 Upland Avenue</h3>
+              <p class="text-gray-500 text-sm mb-4">Newton, MA 02461 &bull; Newton Highlands</p>
+              <div class="flex justify-between border-y border-gray-100 py-3 text-sm text-gray-600 mb-4">
+                <span><i class="fas fa-bed text-gold mr-1"></i> 4 Beds</span>
+                <span><i class="fas fa-bath text-gold mr-1"></i> 3 Baths</span>
+                <span><i class="fas fa-home text-gold mr-1"></i> Single Family</span>
+              </div>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Successfully negotiated and closed by Maggie Wong representing buyer clients with complete transaction guidance.</p>
+            </div>
+            <a href="#sellers" class="block text-center border border-navy text-navy text-sm font-semibold py-2.5 rounded hover:bg-navy hover:text-white transition">Request Market Valuation</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="buyers" class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-serif font-bold text-navy">Home Buyer's Guide & Tools</h2>
+        <div class="w-16 h-1 bg-gold mx-auto my-4"></div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          It takes more than a trained real estate agent to understand the needs and concerns of buyer clients. It takes a team who has been there, someone who has the same concerns when they're home shopping. There's plenty to do. Check out my home buyer services below...
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-6 rounded-lg border border-gray-200 bg-gray-50 hover:shadow-md transition">
+          <div class="text-gold text-2xl mb-3"><i class="fas fa-search-location"></i></div>
+          <h3 class="font-bold text-navy text-lg mb-2">Home Search Assistance</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">I help my buyers understand the many fields of information in an MLS, Multiple Listing Service search. I guide them in making the most of searches in an MLS with thousands of listings.</p>
+        </div>
+
+        <div class="p-6 rounded-lg border border-gray-200 bg-gray-50 hover:shadow-md transition">
+          <div class="text-gold text-2xl mb-3"><i class="fas fa-bell"></i></div>
+          <h3 class="font-bold text-navy text-lg mb-2">Automated Search Reports</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">Once I have an idea of your criteria for a home selection, I can set up automated search alert emails to keep you informed of new listings and price reductions of qualified properties.</p>
+        </div>
+
+        <div class="p-6 rounded-lg border border-gray-200 bg-gray-50 hover:shadow-md transition">
+          <div class="text-gold text-2xl mb-3"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h3 class="font-bold text-navy text-lg mb-2">Financing Assistance</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">As tough as it is these days to get a mortgage, I know the best sources in the market and will help you to contact mortgage professionals who have been very helpful to my past clients.</p>
+        </div>
+
+        <div class="p-6 rounded-lg border border-gray-200 bg-gray-50 hover:shadow-md transition">
+          <div class="text-gold text-2xl mb-3"><i class="fas fa-handshake"></i></div>
+          <h3 class="font-bold text-navy text-lg mb-2">Price Negotiations</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">Buyers shouldn't walk into a deal unarmed. I arm you with market data to help you to understand the buyer and seller sides and formulate an offer price negotiation strategy.</p>
+        </div>
+
+        <div class="p-6 rounded-lg border border-gray-200 bg-gray-50 hover:shadow-md transition">
+          <div class="text-gold text-2xl mb-3"><i class="fas fa-tools"></i></div>
+          <h3 class="font-bold text-navy text-lg mb-2">Inspections & Repair Negotiations</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">Price isn't the only negotiation, as there will be property inspections and you may need to enter into more negotiating around property condition and repairs. I am an expert at this.</p>
+        </div>
+
+        <div class="p-6 rounded-lg border border-gray-200 bg-gray-50 hover:shadow-md transition">
+          <div class="text-gold text-2xl mb-3"><i class="fas fa-file-signature"></i></div>
+          <h3 class="font-bold text-navy text-lg mb-2">Contract to Closing</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">The myriad of tasks, documents and delivery deadlines involved in a real estate transaction are all coordinated by me and our closing assistance staff. I am here to help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sellers" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-serif font-bold text-navy">Home Seller's Guide & Tools</h2>
+        <div class="w-16 h-1 bg-gold mx-auto my-4"></div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Sellers have enough to worry about in readying their home for market and planning their move to a new home. I will take over a huge number of tasks and details to make sure that your real estate property is properly evaluated, priced, marketed, negotiated and carried to closing.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-navy text-base mb-2">A Marketing Plan that Works</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">We have perfected a marketing plan for every type of property in the market. Some things work better in some areas and price ranges than others. I'll craft a unique plan for your property.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-navy text-base mb-2">Thorough & Objective Evaluation</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">I consider it my obligation to help you thoroughly and objectively evaluate your home's condition and features to properly assess how it competes in the current real estate market.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-navy text-base mb-2">CMA Market Analysis</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">I help my clients to value their property through thorough CMA, Comparative Market Analysis reports using current listing price data and past sold comparable property sales.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-navy text-base mb-2">Search Assistance</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">It's important that I help you to search the MLS® so you can learn about currently listed similar homes in your area. Only by knowing the competition you can set a competitive price.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-navy text-base mb-2">Regular Market Updates</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">Markets don't just change monthly, they change daily in many instances. As new listings come on the market and others sell, I provide you with regular market updates to keep you in the loop.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-navy text-base mb-2">Price Negotiations</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">I will be with you every step of the way in the contract price negotiations and will work to get you the top price possible with the fewest concessions.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-navy text-base mb-2">Inspections & Repairs</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">The negotiations rarely end with price. When buyers request corrective action involving expense to the seller, I'm here to work with you every step of the way!</p>
+        </div>
+
+        <div class="bg-white p-6 rounded border border-gray-200 shadow-sm">
+          <h3 class="font-bold text-navy text-base mb-2">Contract to Closing Process</h3>
+          <p class="text-gray-600 text-xs leading-relaxed">There are more than 50 tasks involved in taking a seller side transaction from contract to closing. I'm on top of all of them to make sure you leave with a check.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl font-serif font-bold text-navy">About Eastern Elite Realty</h2>
+        <div class="w-16 h-1 bg-gold mx-auto my-4"></div>
+        <p class="text-gray-700 text-base leading-relaxed">
+          We are a small real estate company established in 2016. We focus on putting our clients first and are dedicated to providing the utmost support. We are always here to hold your hand and guide you through every step of the buying and selling process. It is this client focused dedication that have made us successful. Our clients are our biggest asset and marketing tool. It is through their word of mouth and recommendations to others that result in repeat referral businesses. Our clients are our success story!
+        </p>
+      </div>
+
+      <div class="mb-8 text-center">
+        <h3 class="text-2xl font-serif font-bold text-navy">Here Is How I Could Help</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 border border-gray-200 rounded bg-gray-50">
+          <div class="text-navy font-bold text-lg mb-2 border-b-2 border-gold pb-2">RESIDENTIAL SINGLE FAMILY</div>
+          <p class="text-gray-600 text-xs leading-relaxed mt-3">My residential single family services connect buyers with sellers every day, and I do it with professionalism and a total dedication to my clients. This property type is the majority of my market transactions, but by far not the only one in which we have expertise.</p>
+        </div>
+
+        <div class="p-6 border border-gray-200 rounded bg-gray-50">
+          <div class="text-navy font-bold text-lg mb-2 border-b-2 border-gold pb-2">CONDOMINIUMS</div>
+          <p class="text-gray-600 text-xs leading-relaxed mt-3">While condominiums are residential, they're a very different market focus, and I am an expert in evaluating condos and helping buyers and sellers to cope with the special financing and homeowner concerns for this property type.</p>
+        </div>
+
+        <div class="p-6 border border-gray-200 rounded bg-gray-50">
+          <div class="text-navy font-bold text-lg mb-2 border-b-2 border-gold pb-2">MULTI-FAMILY</div>
+          <p class="text-gray-600 text-xs leading-relaxed mt-3">Investors are great clients for me. Multi-family properties are a very unique market. The detailed return on investment and valuation calculations investors need to evaluate properties for rental are second nature to me.</p>
+        </div>
+
+        <div class="p-6 border border-gray-200 rounded bg-gray-50">
+          <div class="text-navy font-bold text-lg mb-2 border-b-2 border-gold pb-2">COMMERCIAL & VACANT LAND</div>
+          <p class="text-gray-600 text-xs leading-relaxed mt-3">Whether it's a land, shopping mall, a small office building or a restaurant space, I'm your commercial property specialist. Contact me for your commercial property needs in the Natick real estate markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-20 px-4 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-serif font-bold text-navy">Client Testimonials</h2>
+        <div class="w-16 h-1 bg-gold mx-auto my-4"></div>
+        <p class="text-gray-600 text-sm">Read what our valued buyers and sellers have to say about working with Maggie Wong.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="flex flex-col justify-between">
+          <div class="speech-bubble p-6 mb-6">
+            <p class="text-gray-700 text-xs leading-relaxed italic">"Maggie was wonderful throughout the process, made the transaction very smooth and helped me find vendors/service providers as well. Maggie was great!"</p>
+          </div>
+          <div class="flex items-center space-x-3 px-2">
+            <div class="w-10 h-10 rounded-full bg-navy text-gold flex items-center justify-center font-bold text-sm">CO</div>
+            <div>
+              <h4 class="font-bold text-navy text-sm">Christian Ollenborger</h4>
+              <p class="text-gray-500 text-xs">Natick, MA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <div class="speech-bubble p-6 mb-6">
+            <p class="text-gray-700 text-xs leading-relaxed italic">"Maggie was very patient and understanding of my situation. My husband is active duty military and we were looking for homes while not even in the state yet. Maggie scheduled virtual showings for me where we FaceTimed and we walked through properties together. When we arrived she immediately got our feet wet and scheduled back to back showings on a single weekend so we wouldn't waste time. In the end we found a property that had competing multiple offers. We got the house and also an amazing credit back due to inspection results that weren't ideal. Maggie is an agent who is truly professional, but is a firecracker when she needs to be to get you the best deal possible."</p>
+          </div>
+          <div class="flex items-center space-x-3 px-2">
+            <div class="w-10 h-10 rounded-full bg-navy text-gold flex items-center justify-center font-bold text-sm">MC</div>
+            <div>
+              <h4 class="font-bold text-navy text-sm">Mary Chin</h4>
+              <p class="text-gray-500 text-xs">Concord, MA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <div class="speech-bubble p-6 mb-6">
+            <p class="text-gray-700 text-xs leading-relaxed italic">"As a first time home buyer, I didn't know what to expect on a lot of things. Maggie basically held my hands throughout the process and she was always around day or night weekdays or weekends to answer all my questions. Maggie is very knowledgeable and always on top of things. Her attention to detail is second to none. With this said, I would definitely recommend Maggie and Eastern Elite Realty to everyone I know."</p>
+          </div>
+          <div class="flex items-center space-x-3 px-2">
+            <div class="w-10 h-10 rounded-full bg-navy text-gold flex items-center justify-center font-bold text-sm">JF</div>
+            <div>
+              <h4 class="font-bold text-navy text-sm">Jessica Fu</h4>
+              <p class="text-gray-500 text-xs">Newton, MA</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 px-4 bg-navy text-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <span class="text-gold font-bold uppercase text-xs tracking-widest">Get In Touch</span>
+          <h2 class="text-3xl font-serif font-bold mt-1 mb-6">Contact Maggie Wong</h2>
+          <p class="text-gray-300 text-sm leading-relaxed mb-8">
+            Ready to buy, sell, or request a comparative market evaluation for your property? Send a direct message below.
+          </p>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start space-x-3">
+              <i class="fas fa-building text-gold mt-1"></i>
+              <div>
+                <strong>Eastern Elite Realty, LLC</strong>
+                <p class="text-gray-300">375 VFW Parkway, Suite 318<br>Chestnut Hill, MA 02467</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-phone-alt text-gold"></i>
+              <a href="tel:6173192803" class="hover:underline">(617) 319-2803</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-gold"></i>
+              <a href="mailto:mwong419@gmail.com" class="hover:underline">mwong419@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="bg-white text-gray-800 p-8 rounded-lg shadow-xl space-y-4">
+          <h3 class="font-bold text-navy text-lg mb-2">Send a Direct Inquiry</h3>
+          
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1">Your Name *</label>
+            <input type="text" id="senderName" required class="w-full px-3 py-2 border rounded text-sm focus:outline-none focus:border-navy">
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-600 mb-1">Email Address *</label>
+              <input type="email" id="senderEmail" required class="w-full px-3 py-2 border rounded text-sm focus:outline-none focus:border-navy">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-600 mb-1">Phone Number</label>
+              <input type="tel" id="senderPhone" class="w-full px-3 py-2 border rounded text-sm focus:outline-none focus:border-navy">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1">Inquiry Type</label>
+            <select id="inquiryType" class="w-full px-3 py-2 border rounded text-sm focus:outline-none focus:border-navy">
+              <option value="Buying a Home">Buying a Home</option>
+              <option value="Selling / Free Valuation">Selling / Free Valuation</option>
+              <option value="General MLS Inquiry">General MLS Inquiry</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1">Message *</label>
+            <textarea id="senderMessage" rows="4" required class="w-full px-3 py-2 border rounded text-sm focus:outline-none focus:border-navy" placeholder="How can Maggie help you?"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-navy text-white font-bold py-3 rounded hover:bg-navy-light transition shadow">Send Email to Maggie</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 text-xs py-8 px-4 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+      <div>
+        <p class="font-bold text-white text-sm">Eastern Elite Realty, LLC</p>
+        <p>375 VFW Parkway, Chestnut Hill, MA 02467 &bull; Broker License &bull; Established 2016</p>
+      </div>
+      <div>
+        <p>&copy; 2026 Eastern Elite Realty. Equal Housing Opportunity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FORM SUBMISSION HANDLER
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('senderName').value;
+      const email = document.getElementById('senderEmail').value;
+      const phone = document.getElementById('senderPhone').value;
+      const type = document.getElementById('inquiryType').value;
+      const message = document.getElementById('senderMessage').value;
+
+      // Construct mailto direct fallback
+      const subject = encodeURIComponent(`New Web Inquiry: ${type} - ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nType: ${type}\n\nMessage:\n${message}`);
+      
+      window.location.href = `mailto:mwong419@gmail.com?subject=${subject}&body=${body}`;
+      
+      alert('Opening mail client to send direct inquiry to mwong419@gmail.com. Thank you!');
+    });
+  </script>
+</body>
+</html>
